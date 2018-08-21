@@ -1,0 +1,11 @@
+﻿#过滤文件夹
+node_modules/
+dom/
+dist/
+
+*.zip
+*.rar
+*.7z
+*.exe
+*.wmv
+*.mp4

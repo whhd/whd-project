@@ -1,0 +1,54 @@
+#box{width: 1280px;height: 100%;
+    .container{
+        width: 990px;height: 100%;margin:0 auto;
+        .header{
+            width: 990px;height: 94px;padding: 14px 0;
+            .header-l{
+                float: left;
+                .register-logo{
+                    float: left;
+                    border-right: 1px solid #ddd;
+                }
+                p{
+                    float: right;font-size: 14px;line-height: 50px;padding-left: 20px;
+                }
+            }
+            .header-r{
+                float: right;
+                p{
+                    font-size: 14px;line-height: 50px;
+                    .dl{
+                        color:#c00;
+                    }
+                }
+            }
+        }
+    }   
+
+        .register-wrap{
+            width: 980px;height: 764px;border:1px solid #e6e6e6;
+            .title{
+                padding: 16px 0 16px 90px;
+                background: #fafafa;
+                font: 18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+                color: #999;
+            }
+            .register-module {
+                float: left;
+                padding: 30px 0 0 89px;
+                width: 500px;
+                .register-tab {
+                    height: 39px;
+                    // border-bottom: 1px solid #e6e6e6;
+                    .register-tab .current {
+                        margin: 0 -1px -1px;
+                        padding: 0 0 2px;
+                        // border-top: 2px solid #e02d2d;
+                        background: #fff;
+                        
+                    }
+                }
+            }
+        }
+    }
+    

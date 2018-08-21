@@ -1,0 +1,294 @@
+/*
+@Description: �йش��̳ǵ�¼ע��css
+@author: liyue
+@update: 2014-01-010
+*/ 
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+body{font:12px/1.5 Arial; color:#333;}
+select,input,button{vertical-align:middle;font-size:100%;}
+ul,ol{list-style:none;}
+fieldset,img{border:0;}
+em{font-style:normal;}
+.clearfix:after{content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix{*zoom:1}
+
+/* global */
+a{ color:#134ba0; text-decoration:none;}
+a:hover,.download-list a:hover,.footer .about a:hover,.header .about a:hover{ color:#c00; text-decoration:underline;}
+.login-index{ background:#fafafa;}
+.login-index .footer{position: fixed;left: 0;bottom: 0;width: 100%;}
+.container{ width:990px; margin:0 auto;}
+input:focus{ outline:none;}
+
+/* bg */
+.login-layer-btn,.submit-loading,.login-foot .sina,.login-foot .qq,.login-foot .alipay,.login-foot .baidu,.login-wrong-tips,.case-tips .ico,.form-item .remove,.register-btn{ background:url(https://login.zol.com/image/bg.png) no-repeat;}
+.download-list a,.fast-login-list a,.register-tab span,.get-captcha,.register-form .right-tips,.register-form .wrong-tips{ background:url(https://login.zol.com/image/login-bg.png) no-repeat;}
+
+/* header */
+.header{ padding:20px 0;}
+.logo{ float:left;}
+.header .about{ float:right; margin:0 -10px 0 0; padding:23px 0 0; color:#ccc;}
+.header .about a{ margin:0 10px; color:#666;}
+
+/* footer */
+/*.footer{ margin:50px 0 0; padding:12px 0 25px; border-top:1px solid #dcdcdc; background: #fff; position: fixed;bottom: 0;left: 0;width: 100%;}*/
+.footer{ margin:50px 0 0; padding:12px 0 25px; border-top:1px solid #dcdcdc;}
+.footer .about{ float:left; margin:0 0 0 -10px; color:#ccc;}
+.footer .about a{ margin:0 10px; color:#666;}
+.copyright{ float:right; color:#666;}
+
+/* login-wrap*/
+.login-wrap{ margin:30px 0 0; border:1px solid #e6e6e6; background:#fff;}
+.login-wrap .ad-div{ float:left;}
+.login-wrap .ad-div img{ display:block;}
+.login-layer{ float:right; padding:0 85px 0 0; width:290px;}
+.login-head{ position:relative; zoom:1; padding:20px 0 0; border-bottom: 2px solid #e6e6e6;}
+.login-head h3{ display: block; width: 50%; float: left; height:35px; overflow:hidden; font:18px/35px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color:#666; text-align: center; margin-bottom: -2px; cursor: pointer; }
+.login-head h3.curLogin { border-bottom: 2px solid #de3030; color: #333; }
+.login-head .reg-now{ position:absolute; top:23px; right:0; font:12px/28px "Arial";}
+.login-content{ padding:25px 0 0; position:relative; zoom:1;}
+.form-item{ position:relative; margin:0 0 7px; padding:8px 5px; height:22px; border:1px solid #ccc;}
+.form-item .label{ position:absolute; top:8px; left:5px; font:14px/22px "Arial"; color:#aaa;}
+.form-item .text{ display:block; width:278px; height:22px; font:14px/22px "Arial"; border:0 none;}
+.form-item-wrong{ border:1px solid #f33;}
+.form-item .remove{ position:absolute; top:9px; right:6px; display:none; width:21px; height:21px; background-position:-157px -107px; cursor:pointer;}
+.form-other{ padding:0 0 10px; overflow:hidden; zoom:1;}
+.autologon{ float:left; color:#999;}
+.autologon input{ margin:0 8px 0 0; +margin:-1px 5px 0 -3px; _margin:-3px 5px 0 -4px;}
+.form-other a{ float:right;}
+.form-other a:hover{ color:#c00;}
+.login-layer-btn, .submit-loading{ display:block; margin:0 0 10px; width:290px; height:40px; font:bold 14px/40px "Arial"; color:#fff; text-align:center; border:0 none; background-position:0 0;}
+.login-layer-btn{ cursor:pointer;}
+.login-layer-btn:hover{ background-position:0 -41px;}
+.login-wrong-tips{ display:none; position:absolute; top:1px; left:0; padding:0 0 0 25px; width:263px; height:22px; font:12px/22px "Arial"; color:#f33; border:1px solid #f99; background-color:#fff2f2; background-position:-270px -89px;}
+.login-wrong-tips a{ margin:0 6px;}
+.case-tips{ display:none; position:absolute; top:26px; left:30px; padding:0 10px; border:1px solid #ffd24c; background:#fff5d6; font:12px/28px "Arial"; color:#666; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+.case-tips .ico{ position:absolute; top:-5px; left:10px; display:block; width:9px; height:5px; font:0/0 "Arial"; background-position:-212px -89px;}
+.username{ z-index:2; margin:0 0 10px;}
+.account-list{ position:absolute; top:38px; left:-1px; width:288px; border:1px solid #ccc; background:#fff;}
+.account-list li{ padding:0 6px; height:30px; font:12px/30px "Arial"; color:#333; cursor:pointer;}
+.account-list li:hover, .account-list .hover{ background:#ededed;}
+.login-foot{ margin:10px 0 0;}
+.login-foot span{ float:left; font:12px/38px "Arial"; color:#666; padding:0 2px 0 0;}
+.login-foot .sina, .login-foot .qq, .login-foot .alipay, .login-foot .baidu{ float:left; margin:0 12px 0 0; width:38px; height:38px; text-indent:-9999em; overflow:hidden;}
+.login-foot .sina{ background-position:0 -82px;}
+.login-foot .qq{ background-position:-39px -82px;}
+.login-foot .alipay{ background-position:-78px -82px;}
+.login-foot .baidu{ background-position:-117px -82px;}
+.login-foot .sina:hover{ background-position:0 -121px;}
+.login-foot .qq:hover{ background-position:-39px -121px;}
+.login-foot .alipay:hover{ background-position:-78px -121px;}
+.login-foot .baidu:hover{ background-position:-117px -121px;}
+
+/* download-list */
+.download-list{ padding:90px 0 0;}
+.download-list a{ display:inline-block; padding:0 0 0 8px; margin:0 10px 0 0; font:12px/32px "Arial"; background-position:-167px -432px; color:#afaeae;}
+
+/* register-wrap */
+.register-wrap{ padding:0 0 100px; border:1px solid #e6e6e6;width:980px;margin:auto;}
+.register-wrap .title{ padding:16px 0 16px 90px; background:#fafafa; font:18px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; color:#999;}
+
+.register-module{ float:left; padding:30px 0 0 89px; width:500px;}
+.register-tab{ height:39px; border-bottom:1px solid #e6e6e6;}
+.register-tab li{ float:left; position:relative; margin:0 -1px; width:250px; border:1px solid #e6e6e6; border-bottom:0 none; background:#fafafa; text-align:center; cursor:pointer;}
+.register-tab .current{ margin:0 -1px -1px; padding:0 0 2px; border-top:2px solid #e02d2d; background:#fff; cursor:default;}
+.register-tab .current span{ color:#c00; line-height:36px; }
+.register-tab span{ display:inline-block; font:18px/38px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";}
+.register-tab .phone-number{ padding:0 0 0 20px; background-position:-158px -281px;}
+.register-tab .email{ padding:0 0 0 32px; background-position:-146px -380px;}
+.register-tab .current .phone-number{ background-position:-158px -235px;}
+.register-tab .current .email{ background-position:-146px -326px;}
+
+.fast-login{ float:right; margin:30px 0 0; padding:0 80px 0 25px; width:170px; border-left:1px solid #f5f5f5;}
+.fast-login p{ margin:-6px 0 0; font:12px/24px "Arial"; color:#666;}
+.fast-login p a{ margin:0 6px;}
+.fast-login-list a{ display:block; margin:15px 0 0; width:170px; height:36px; text-indent:-9999em; overflow:hidden; zoom:1;}
+.fast-login-list a:hover{ opacity:0.8; filter:alpha(opacity=80);}
+.fast-login-list .sina{ background-position:0 0;}
+.fast-login-list .qq{ background-position:0 -37px;}
+.fast-login-list .alipay{ background-position:0 -74px;}
+.fast-login-list .baidu{ background-position:0 -111px;}
+
+
+.register-phone-number,.register-email{ padding:30px 0 0;}
+.register-form{ position:relative; margin:0 0 42px; padding:0 0 0 83px; zoom:1;}
+.register-form .label{ position:absolute; top:0; left:0; width:83px; font:14px/40px "Arial"; text-align:right; color:#666;}
+.register-form .label .xh{ padding:0 7px 0 0; font-size:12px; font-family:"Simsun"; color:#f30;}
+.register-form .text{ display:block; margin:0 10px 0 0; padding:8px 5px; width:278px; height:22px; border:1px solid #ccc;}
+.register-form .wrong-text{ border:1px solid #ff3333; background:#fff2f2;}
+.register-form .sms-captcha .text{ float:left; width:158px;}
+.sms-captcha .loading{ float:left; width:108px; height:38px; border:1px solid #ccc; background:#e6e6e6; font:12px/38px "Arial"; text-align:center ;-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; color:#999;}
+.sms-captcha .hint{ float:left; padding:0 0 0 10px; font:12px/40px "Arial";}
+.get-captcha{ float:left; width:110px; height:40px; border:0 none; background-position:0 -148px; font:12px/40px "Arial"; color:#666; cursor:pointer; background: #f8f8f8; border: 1px solid #ccc;}
+.get-captcha:hover{background:#f2f2f2;}
+.register-form .tips{ position:absolute; top:47px; left:83px; color:#aaa;}
+.register-form .right-tips{ position:absolute; top:12px; left:383px; width:15px; height:15px; font:0/0 "Arial"; background-position:-155px -162px;}
+.register-form .wrong-tips{ position:absolute; top:0; left:383px; padding:0 0 0 20px; font:12px/40px "Arial"; color:#ff3333; background-position:-155px -184px; white-space:nowrap;}
+.register-form .wrong-tips a{ margin:0 6px;}
+.agreement{ display:block; padding:0 0 0 83px; height:32px; font:12px/32px "Arial"; color: #999;}
+.agreement input{ margin:0 8px 0 0; +margin:-1px 5px 0 -3px; _margin:-3px 5px 0 -4px;}
+.register-btn{ display:block; margin:20px 0 0 83px; width:290px; height:40px; font:bold 14px/40px "Arial"; color:#fff; text-align:center; border:0 none; background-position:0 0; cursor:pointer;}
+.register-btn:hover{ background-position:0 -41px;}
+
+.register-form .email{ position:relative; zoom:1; z-index:2;}
+.register-form .account-list{ top:40px; left:0;}
+
+.email-captcha .text{ float:left; width:158px;}
+.captcha-img{ float:left; margin:0 10px 0 0;}
+.captcha-img img{ display:block; border:1px solid #ccc;}
+.captcha-change{ float:left; font:12px/40px "Arial";}
+
+/*
+@Description: �йش��̳ǵ�¼ע��css
+@author: hanjw
+@update: 2014-06-24
+*/
+
+/*header*/
+.header{padding-top: 14px;} 
+.header .logo a { float:left; }
+.header .logo a:hover { color:#666; text-decoration:none; }
+.header .logo a img { float:left;}
+.header .logo p { float:left; margin:8px 0 0 8px; padding-left:10px; font:14px/44px simsun; color:#666; border-left:1px solid #e6e6e6; cursor:pointer; }
+
+/*login-wrap*/
+.login-wrap{margin-top: 26px;}
+
+/*register-bar*/
+.register-bar{float: right; padding: 21px 0 0; font-size: 14px; line-height: 22px; *width: 220px;}
+.register-bar a{float: right; height: 16px; padding: 3px 10px; color: #c00; font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";}
+.register-bar a:hover{color: #fff; background-color: #cd1f1f; text-decoration: none;}
+
+
+/*form-item*/
+.login-content .focus{border-color: #c00;}
+
+/*mobileLogin-content*/
+.mobileLogin-content .phone-number{ margin:0 0 10px; z-index:2;}
+.mobileLogin-content .phone-number .text{ width:173px;}
+.mobileLogin-content .phone-number .btn,.captcha-loading{ position:absolute; top:0; right:0; width:109px; height:38px; font:12px/38px arial; background:#f8f8f8; border:0 none; border-left:1px solid #ccc; cursor:pointer;}
+.mobileLogin-content .phone-number .btn:hover{ background:#f2f2f2;}
+.mobileLogin-content .captcha-loading{ cursor:default; background:#f2f2f2; color:#999; text-align:center;}
+
+
+.tippopHover{background:#ededed;}
+
+.captcha-item{ overflow:hidden; zoom:1; margin:10px 0 7px; padding:0; height:40px; border:0 none;}
+.captcha-item .text{ float:left; width:168px;  padding: 8px 5px; height: 22px; border: 1px solid #ccc;}
+.captcha-item img{ float:right;}
+
+/* 2016-09-14 */
+.collaborate{width: 290px; text-align: center; margin-top: 15px;color: #666666;}
+.collaborate p {float: left;}
+.xian{float: left;height: 1px;background: #f0f0f0;width: 100px;margin-top: 7px;}
+.xian:first-child{margin-right:9px;}
+.xian:last-child{margin-left:9px;}
+.login-foot .weixin{float: left;margin: 0 12px 0 25px;width: 38px;height: 38px;text-indent: -9999em;overflow: hidden;background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 0 no-repeat;}
+.login-foot .weixin:hover{background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 -38px no-repeat;}
+.fast-login-list .weixin {background: url(http://icon.zol-img.com.cn/newshop/login/weixin.png) 0 0 no-repeat; background-size: 100%;}
+
+
+
+/* ���� 2017-6/2 */
+.layer{position: fixed;left: 50%;top: 30%;width: 390px;border: 5px solid #6b6b6b;margin: 0 0 0 -200px;background-color: #fff;z-index:3;}
+.layer-hd{position: relative;height: 38px;line-height: 38px;background-color: #fafafa;}
+.layer-hd .tl{margin-left: 10px;font-size: 14px;color: #333;}
+.layer-hd .close{position: absolute;right: 0;top: 0;width: 38px;height: 38px;line-height: 38px;text-align: center;font-size: 32px;color: #999;cursor: pointer;}
+.layer-con{padding:20px 30px;}
+.layer-con .explain{line-height: 22px;font-size: 14px;}
+.layer-opertion{padding-top: 15px;text-align: center;}
+.layer-opertion .cancel,.layer-opertion .confirm{display: inline-block;width: 70px;height: 28px;margin: 0 8px;line-height: 28px;font-size: 14px;border-radius: 2px;cursor: pointer;}
+.layer-opertion .cancel{border:1px solid #d8d8d8;color: #666;}
+.layer-opertion .confirm{border: 1px solid #3c8bf0;background-color: #3c8bf0;color: #fff;}
+/* ���� */
+.layer_step .step{font-size: 12px;line-height: 20px;color: #666;}
+
+/* �ֻ�����֤ҳ 2017-6/2 */
+.proving-regiong{width:988px;height: 518px;border:1px solid #e6e6e6;border-top:2px solid #ce1a1b;background-color: #fff;}
+.proving-con{width: 350px;margin:72px auto 0;}
+.proving-con_tl{height: 48px;margin-bottom:20px;font-size: 28px;line-height: 48px;text-align: center;font-weight: normal;}
+.proving-group{position: relative;height: 40px;margin-bottom:10px;padding-top: 10px;}
+.proving_input{width:348px;height: 38px;border:1px solid #ccc;}
+.proving_input-tl{float: left;width: 70px;line-height: 38px;font-size: 14px;color: #333;text-align: right;}
+.proving_input .input_text{width: 258px;height: 16px;padding: 11px 10px;font-size: 14px;line-height: 16px;;border:0 none;}
+/* �ֻ������� */
+.phone_input{float:left;width:228px;}
+.phone_input .input_text{width:138px;}
+.gain-code--btn{float: right;width: 108px;height: 38px;line-height: 38px;text-align: center;font-size: 14px;color: #333;border: 1px solid #ccc;background-color: #f8f8f8;cursor: pointer;}
+.gain-code--btn:hover{background-color: #f2f2f2;}
+.gain-code--btn.count{color: #999;}
+/* ������ʾ */
+.proving_error-tip{position: absolute;left: 360px;top:10px;height: 40px;padding-left: 20px;line-height: 40px;font-size: 12px;color:#c00;background: url(http://icon.zol-img.com.cn/newshop/shop/login/errorIcon.png) no-repeat left center;white-space: nowrap;}
+/* ˵�� */
+.proving-con--explain{margin-bottom: 26px;font-size: 12px;line-height: 16px;color: #666;}
+/* ��֤��ť */
+.proving-btn{display: block;width: 100%;height: 40px;line-height: 40px;font-size: 14px;color: #fff;border:0 none;background-color: #db2d2d;border-radius: 2px;cursor: pointer;}
+.proving-btn:hover{background-color: #c51e1e;}
+
+/* �ֻ�����֤�ɹ�ҳ 2017-6/2 */
+.proving-success{margin-top: 80px;text-align: center;}
+.proving-success_msg{padding-top: 51px;line-height: 42px;font-size: 24px;background: url(http://icon.zol-img.com.cn/newshop/shop/login/successIcon.png) no-repeat center top;}
+.proving-success_explain{line-height: 18px;font-size: 12px;color: #666;}
+.proving-success_btn{display: inline-block;width: 76px;height: 28px;margin-top: 15px;line-height: 28px;text-align: center;font-size: 14px;color: #333;border: 1px solid #d8d8d8;border-radius: 1px;background-color: #fafafa;cursor: pointer;}
+
+
+/* �ֻ�������֤ */
+/*.login-safe-notice i, .login-safe-close, .login-safe-pwdnotice, .login-safe-success span { background:url(http://icon.zol-img.com.cn/service/login-safe-tip-icon.png) no-repeat; }
+.login-safe-mask { position:absolute; left:0; top:0; z-index:2147483649; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.5); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#80000000", EndColorStr="#80000000");
+}
+.login-safe-tip { position:fixed; left:50%; top:50%; margin:-172px 0 0 -263px; z-index:2147483650; width:527px; height:344px; padding:5px; }
+.login-safe-bg { position:absolute; left:0; top:0; width:527px; height:344px; overflow:hidden; padding:5px; background-color:rgba(0, 0, 0, 0.3); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#4d000000", EndColorStr="#4d000000");
+}
+:root .login-safe-mask, :root .login-safe-bg { filter:none; }
+.login-safe-box { position:absolute; left:5px; top:5px; width:527px; height:344px; background-color:#fff; font:14px/30px "Microsoft Yahei"; color:#333; }
+.login-safe-close { position:absolute; right:6px; top:8px; width:20px; height:20px; background-position:5px -35px; text-indent:-9999px; cursor:pointer; }
+.login-safe-title { height:37px; line-height:37px; padding:0 10px; background-color:#fafafa; border-bottom:1px solid #eee; }
+.login-safe-notice { padding:5px 0; height:auto; line-height:20px; margin-bottom:12px; background-color:#fef7cb; color:#fc6801; }
+.login-safe-notice i { margin:1px 0 0 5px; display:inline-block; width:16px; height:16px; background-position:0 2px; float:left; }
+.login-safe-notice span { display:block; margin:0 10px 0 25px; }
+.login-safe-con { padding:0 0 0 40px; }
+.login-safe-select { padding:9px 0 0; }
+.login-safe-select input { margin:-2px 8px 0 0; }
+.login-safe-select label { margin-right:36px; }
+.login-safe-word { padding:9px 0 0; }
+.login-safe-word1 { padding:6px 0 0; }
+.login-safe-word a, .login-safe-word1 a, .login-safe-success a { color:#008ee1; }
+.login-safe-word a:hover, .login-safe-word1 a:hover, .login-safe-success a:hover { color:#c00; }
+.login-safe-code { padding:20px 0 0; font-weight:bold; }
+.login-safe-code span { font-weight:normal; margin-left:10px; font-size:12px; }
+.login-safe-sendcode-hide { display:none; }
+.login-safe-codenotice { height:28px; font-size:12px; line-height:28px; font-weight:normal; color:#f00; padding:0 0 0 55px; }
+.login-safe-codetext { width:108px; padding:0 5px; margin:0 5px 0 12px; height:28px; border:1px solid #d7d7d7; font:14px/28px "Microsoft Yahei"; }
+.login-safe-sendcode { width:118px; height:30px; text-align:center; color:#333; border:1px solid #d9d9d9; background-color:#f5f5f5; font:14px/26px "Microsoft Yahei"; border-radius:2px; cursor:pointer; }
+.login-safe-sendcode-disabled { color:#aaa; }
+.login-safe-btn { display:block; margin:17px auto 0; width:102px; height:34px; border:1px solid #c00; background-color:#c00; font:14px/30px "Microsoft Yahei"; color:#fff; border-radius:2px; cursor:pointer; text-align:center; }
+.login-safe-btn:hover { color:#fff; text-decoration:none; }
+.login-safe-btn-next { margin:17px 0 0; }
+.login-safe-btn-disabled { background-color:#f5f5f5; border:1px solid #d8d8d8; color:#ccc; cursor:default; }
+.login-safe-btn-confirm { margin:13px 0 0 81px; }
+.login-safe-btn-next1 { margin:29px 0 0 81px; }
+.login-safe-pwd { padding:11px 0 0; }
+.login-safe-pwd em { display:inline-block; width:71px; font-weight:bold; text-align:right; margin-right:10px; }
+.login-safe-pwd .login-safe-text, .login-safe-code1 { width:248px; height:28px; padding:0 5px; font:14px/28px "Microsoft Yahei"; border:1px solid #d8d8d8; }
+.login-safe-pwd p { height:28px; padding-left:82px; font-size:12px; line-height:28px; color:#666; }
+.login-safe-pwd .login-safe-pwdnotice { padding-left:100px; color:#f00; background-position:81px -104px; }
+.login-safe-success { padding:38px 0 49px; text-align:center; }
+.login-safe-success span { display:inline-block; line-height:32px; padding-left:47px; background-position:0 -150px; }
+.login-safe-bind { padding:20px 0 0; margin-right: -40px; }
+.login-safe-bind1 { padding:5px 0 0; }
+.login-safe-bind .login-safe-text { width:168px; }
+.login-safe-bind .login-safe-sendcode { margin:0 10px 0 5px; }
+.login-safe-bind span { font-size:12px; }
+.login-safe-code1 { width:108px; }
+.login-safe-bind .login-safe-codenotice { padding-left:10px; }
+.bind-login { text-align: center; font-size: 20px; margin: 50px 0 20px; line-height: 34px; }
+.bind-login i { background: url(http://icon.zol-img.com.cn/service/login-safe-tip-icon.png) no-repeat 0 -150px; display: inline-block; width: 32px; height: 32px; vertical-align: top; margin: 0px 10px 0 0; }
+p.timeReturn { text-align: center; }*/
+
+/*login-head*/
+.form-other .otherLogin-bar{float: left; padding: 0 0 0 17px; background: url(https://login.zol.com/image/shop_login_bg.png) no-repeat -276px -137px; color: #333; line-height: 28px;}
+.form-other .mobileLogin-bar{background-position: -280px -113px;}
+.form-other .otherLogin-bar:hover{color: #c00;}
+.form-other a.forget-password { line-height: 28px; }
+
+.login-select { display: block; }
